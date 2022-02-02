@@ -3,11 +3,44 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <!--<title>Association de jeunes footballeurs de Quartier 7</title>
+    <title>Association de jeunes footballeurs de Quartier 7</title>
 </head>
-<body class="container">-->
-    <header class="clearfix">
+<body>
+	<!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contacter</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Expéditeur</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput2" class="form-label">Sujet</label>
+                <input type="text" class="form-control" id="exampleFormControlInput2" placeholder=".....">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">J'ai changer d'avis</button>
+              <button type="button" class="btn btn-primary">Envoyer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fin du Modal -->
+<header class="clearfix">
         <div class="container">
                 <div class="header-left">
                     <h1>AJF Q.7</h1>
@@ -20,11 +53,11 @@
                     <nav>
                         <a href="#">Acceuil</a>
                         <a href="#">Evenements</a>
-                        <a href="#">Contact</a>
+                        <a type="button" data-toggle="modal" data-target="#exampleModal">Contact</a>
                     </nav>
                 </div>
-            </div>
-        </header>
+        </div>
+</header>
     <section class="clearfix">
             <div class="container">
                 <div class="section-left">
@@ -32,35 +65,115 @@
                     <h5 class="section-tagline">Association de jeunes footballeurs de Quartier 7</h5>
                 </div>
                 <div class="section-right">
-                    <button class="learn-more">Voir plus</button>
+                    <a href="page.html"><button class="learn-more">ADHÉRER</button></a>
                 </div>
             </div>
-        </section>
-    <!--<main>
-
-    <section>
-        <h2></h2>
-        <hr>
-        <article>
-            <h3></h3>
-            <p>
-              
-            </p>
-        </article>
-        <article>
-            <h3></h3>
-            <p>
-                
-            </p>
-        </article>
     </section>
-    </main>
+<main class="main">
+    <div class="card-deck">
+        <div class="card">
+          <img
+            src="Photo.jpg"
+            class="card-img-top"
+            alt=""
+          />
+          <div class="card-body">
+            <h5 class="card-title">Saison 2019-2020</h5>
+            <p class="card-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Eos iure deleniti quas assumenda dolore a, voluptatem modi.
+                Nulla fuga reiciendis labore minus optio, odit suscipit modi aliquid dolore aliquam ipsam.
+            </p>
+            <a class="btn" href="" role="button">Lire la suite</a>
+          </div>
+        </div>
+    
+        <div class="card">
+          <img
+            src="Photo.jpg"
+            class="card-img-top"
+            alt=""
+          />
+          <div class="card-body">
+            <h5 class="card-title">Saison 2020-2021</h5>
+            <p class="card-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Eos iure deleniti quas assumenda dolore a, voluptatem modi.
+                Nulla fuga reiciendis labore minus optio, odit suscipit modi aliquid dolore aliquam ipsam.
+            </p>
+            <a class="btn" href="/user/register" role="button">Lire la suite</a>
+          </div>
+        </div>
+    
+        <div class="card">
+          <img
+            src="Photo.jpg"
+            class="card-img-top"
+            alt="Ebena"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Saison 2021-2022</h5>
+            <p class="card-text">
+             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+             Eos iure deleniti quas assumenda dolore a, voluptatem modi.
+             Nulla fuga reiciendis labore minus optio, odit suscipit modi aliquid dolore aliquam ipsam.
+            </p>
+            <a class="btn" href="/pricing" role="button">Lire la suite</a>
+          </div>
+        </div>
+      </div>
+</main>
 
-<footer class="footer">
-    <div>
-        <p></p>
-    </div>
-    <p></p>
+<footer>
+   <div class="footer">
+  <div class="contain">
+  <div class="col">
+    <h1>Nos partenaires</h1>
+     <ul>
+       <li>FIFA</li>
+       <li>Féderation Djiboutienne de Football (FDF)</li>
+       <li>CONCACAF</li>
+     </ul>
+  </div>
+  <div class="col">
+    <h1>AJF Q7</h1>
+    <ul>
+      <li>Acceuil</li>
+      <li>Evenements</li>
+      <li><a type="button" data-toggle="modal" data-target="#exampleModal">Contact</a></li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>THÈMES</h1>
+    <ul>
+      <li>Engagement Social</li>
+      <li>Services aux joueurs</li>
+      <li>Association des footballeurs professionnelles</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Localisation</h1>
+    <ul>
+      <li>Résidence Quartier</li>
+      <li>BP 557</li>
+      <li>Code postal 77101</li>
+      <li>Tel : +253 77 78 14 62</li>
+      <li>Fax : +253 21 35 62 40</li>
+      <li>associationjeunesfootballeursQ7@gmail.com</li>
+    </ul>
+  </div>
+<div class="clearfix"></div>
+</div>
+</div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+crossorigin="anonymous"></script>	
 </body>
-</html>-->
+</html>

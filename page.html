@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Association de jeunes footballeurs de Quartier 7</title>
+</head>
+<body>
+	<!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contacter</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Expéditeur</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput2" class="form-label">Sujet</label>
+                <input type="text" class="form-control" id="exampleFormControlInput2" placeholder=".....">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">J'ai changer d'avis</button>
+              <button type="button" class="btn btn-primary">Envoyer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fin du Modal -->
+<header class="clearfix">
+        <div class="container">
+                <div class="header-left">
+                    <h1>AJF Q.7</h1>
+                </div>
+                <div class="header-right">
+                    <label for="open">
+                        <span class="hidden-desktop"></span>
+                    </label>
+                    <input type="checkbox" name="" id="open">
+                    <nav>
+                        <a href="index.html">Acceuil</a>
+                        <a href="#">Evenements</a>
+                        <a type="button" data-toggle="modal" data-target="#exampleModal">Contact</a>
+                    </nav>
+                </div>
+        </div>
+</header>
+    <section class="clearfix">
+            <div class="container">
+                <div class="section-left">
+                    <h1 class="section-title">AJF Q.7</h1>
+                    <h5 class="section-tagline">Association de jeunes footballeurs de Quartier 7</h5>
+                </div>
+            </div>
+    </section>
+            <div>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Acceuil</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">ADHÉRER</li>
+                </ol>
+              </nav>
+            </div>
+<main>
+
+  <div class="container">
+    <div class="col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6">
+      <div class="header">
+  
+        <div class="header__text-group text-center">
+          <h1 class="header__heading">Formulaire d'inscription</h1>
+          <p class="header__subheading">Rejoignez l'association AJF Q.7</p>
+        </div> <!-- close .text-group -->
+      </div> <!-- close .header -->
+      <div class="form-register">
+        <form name="register">
+          <input name="utf8" type="hidden" value="✓">
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="form-group">
+                <label for="user_first_name">Prénom</label>
+                <input autofocus="autofocus" class="form-control" required="required" type="text" name="user[first_name]" id="user_first_name">
+              </div> <!-- close .form-group -->
+            </div> <!-- close .col -->
+  
+            <div class="col-xs-6">
+              <div class="form-group">
+                <label for="user_last_name">Nom</label>
+                <input class="form-control" type="text" name="user[last_name]" id="user_last_name">
+              </div> <!-- close .form-group -->
+            </div> <!-- close .col -->
+          </div> <!-- close .row -->
+  
+          <div class="form-group">
+            <label for="user_email">
+              addresse mail
+            </label>
+            <input class="form-control" type="email" value="" name="user[email]" id="user_email" data-cip-id="cIPJQ342845639">
+  
+          </div> <!-- close .form-group -->
+  
+          <div class="form-group">
+            <label for="user_username">
+              Nom d'utilisateur <span class="text-secondary">(seulement lettres et numéro)</span>
+            </label>
+            <input class="form-control" required="required" type="text" name="user[username]" id="user_username" data-cip-id="user_username" autocomplete="off">
+          </div> <!-- close .form-group -->
+  
+          <div class="form-group">
+            <label for="user_password">
+              mot de pass <span class="text-secondary">(min. 6 char)</span>
+            </label>
+            <input autocomplete="off" class="form-control" required="required" type="password" name="user[password]" id="user_password" data-cip-id="cIPJQ342845640">
+  
+          </div> <!-- close .form-group -->
+  
+          <div class="form-group">
+            <label for="user_subscribe_to_newsletter">
+              <input name="user[subscribe_to_newsletter]" type="hidden" value="0">
+              <input type="checkbox" value="1" name="user[subscribe_to_newsletter]" id="user_subscribe_to_newsletter">
+              Recevoir le journal de l'association
+            </label>
+          </div> <!-- close .form-group -->
+  
+          <div class="form-group">
+            <input type="submit" value="Rejoignez" class="btn btn-primary">
+          </div> <!-- close .form-group -->
+  
+          <div class="form-group text-center">
+            <p class="text-secondary zeta">
+              En rejoignant l'association, vous acceptez les conditions générales d'utilisation et la politique de confidentialité de l'association.
+            </p>
+          </div>
+        </form>
+      </div> <!-- close .form -->
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer">
+ <div class="contain">
+ <div class="col">
+   <h1>Nos partenaires</h1>
+    <ul>
+      <li>FIFA</li>
+      <li>Féderation Djiboutienne de Football (FDF)</li>
+      <li>CONCACAF</li>
+    </ul>
+ </div>
+ <div class="col">
+   <h1>AJF Q7</h1>
+   <ul>
+     <li>Acceuil</li>
+     <li>Evenements</li>
+     <li><a type="button" data-toggle="modal" data-target="#exampleModal">Contact</a></li>
+   </ul>
+ </div>
+ <div class="col">
+   <h1>THÈMES</h1>
+   <ul>
+     <li>Engagement Social</li>
+     <li>Services aux joueurs</li>
+     <li>Association des footballeurs professionnelles</li>
+   </ul>
+ </div>
+ <div class="col">
+   <h1>Localisation</h1>
+   <ul>
+     <li>Résidence Quartier</li>
+     <li>BP 557</li>
+     <li>Code postal 77101</li>
+     <li>Tel : +253 77 78 14 62</li>
+     <li>Fax : +253 21 35 62 40</li>
+     <li>associationjeunesfootballeursQ7@gmail.com</li>
+   </ul>
+ </div>
+<div class="clearfix"></div>
+</div>
+</div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+crossorigin="anonymous"></script>	
+</body>
+</html>
